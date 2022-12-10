@@ -57,7 +57,8 @@ function! s:KittyConfig() abort
     let b:slime_config = {"window_id": 1, "listen_on": ""}
   end
   let b:slime_config["window_id"] = str2nr(system("kitty @ select-window --self"))
-  let b:slime_config["listen_on"] = input("kitty listen on: ", b:slime_config["listen_on"])
+  let b:slime_config["listen_on"] = ""
+  "let b:slime_config["listen_on"] = input("kitty listen on: ", b:slime_config["listen_on"])
 endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
